@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+</script>
+<style>
+body {
+	background-image: url("payment_pic1.jpg");
+}
+
+.Parent {
+	background-color: #cc0066;
+	width: 500px;
+	height: 500px;
+	box-shadow: 15px 1px 15px 10px;
+	color: black;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	color: #FFFE0;
+}
+
+.One {
+	font-family: monospace;
+	color: white;
+	text-align: center;
+}
+
+#cname {
+	padding-left: 5px;
+}
+
+#ccnum {
+	
+}
+
+#expmonth {
+	padding: 2px 5px 0px 0px;
+}
+
+#cvv {
+	padding:;
+}
+
+.btn {
+	background-color: white;
+}
+
+.Last {
+	background-color: white;
+}
+</style>
+</head>
+<body>
+	<div class="Parent">
+		<div class="One">
+			<div class="">
+				<form action="">
+
+					<div class="">
+
+						<div class="">
+							<h2>Payment</h2>
+							<label for="fname">Accepted Cards</label>
+							<div class="">
+								<i class="" style="color: navy;"></i> <i class=""
+									style="color: blue;"></i> <i class="" style="color: red;"></i>
+								<i class="" style="color: orange;"></i>
+							</div>
+							<br> <label for="cname">Name on Card</label> <input
+								type="text" id="cname" name="cardname" placeholder="John Wick"><br>
+							<br> <label for="ccnum">Card number</label> <input
+								type="text" id="ccnum" name="cardnumber"
+								placeholder="1111-2222-3333-4444"><br> <br> <label
+								for="expmonth">Valid Thru</label> <input type="month"
+								id="expmonth" name="expmonth" placeholder="08/2050"><br>
+							<br>
+
+							<div class="">
+								<div class="">
+									<label for="cvv">CVV</label> <input type="text" id="cvv"
+										name="cvv" placeholder="352">
+								</div>
+							</div>
+						</div>
+					</div>
+					<br> <label> <input type="checkbox" name="savecard">
+						Save card details for future payments
+					</label> <br> <br> <input type="submit" value="Proceed to pay"
+						class="btn">
+					<div class="Last"></div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

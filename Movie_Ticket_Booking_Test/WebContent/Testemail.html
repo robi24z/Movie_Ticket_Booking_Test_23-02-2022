@@ -1,0 +1,87 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" content="width=device-width">
+<title>Login</title>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body class="backgrnd">
+	<script>
+		var emil = document.getElementById("email").value;
+		var pass = document.getElementById("pass").value;
+		document.getElementById("disable").disabled = true;
+		function validate_email() {
+			var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+			//var address = document.getElementById[email].value;
+			 if (reg.test(document.getElementById("email").value) == false) {
+				alert("Invalid email");
+			}
+			else if ((document.getElementById("pass").value ==false) {
+				alert("Invalid password");
+			}
+		}
+		function validate_pass() {
+			var pass = document.getElementById("pass").value;
+			var len = pass.length;
+
+			if (len == 8) {
+
+				swal({
+					title : "Warning!",
+					icon : "warning",
+					text : "You Must enter 8 characters!"
+				});
+			}
+
+		}
+
+		/* function validate_field() {
+			var emil = document.getElementById("email").value;
+		 	var pass = document.getElementById("pass").value;
+		 	if(emil==""){
+		 		swal("Enter Email","");
+		 	}
+		 	else if(pass==""){
+		 		swal("Enter password","");
+		 	}
+		} */
+	</script>
+	<center>
+		<div class="form-group">
+			<div class="login_div">
+				<div style="margin-top: 50px;">
+					<font face="arial" color="darkblue"><h2>Login</h2></font>
+					<form onsubmit="validate_email()">
+						<table>
+							<tr>
+								<td><input type="text" id="email"
+									placeholder="Enter Email or ph" /><br></td>
+							</tr>
+							<tr>
+								<td><input type="password" id="pass"
+									placeholder="Enter password" /></td>
+							</tr>
+							<tr>
+								<td><input type="submit" id="disable " value="Login"></td>
+							</tr>
+							<tr>
+								<td><a href="student_reg.jsp"><font face="arial"
+										color="darkblue">Signup</font></a></td>
+							</tr>
+							<tr>
+								<td><a href=""><font face="arial" color="darkblue">Forgot
+											password?</font></a></td>
+							</tr>
+
+
+						</table>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</center>
+</body>
+</html>
